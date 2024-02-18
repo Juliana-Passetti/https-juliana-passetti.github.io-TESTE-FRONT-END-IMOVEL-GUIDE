@@ -1,0 +1,98 @@
+@import url("/styles/header_gridflex.css");
+@import url("/styles");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: whitesmoke;
+    --laranja: #FE6613;
+    --fonte-principal: "Roboto", sans-serif;
+    --azul: #1B2653;
+    --preto: #000000;
+    --cinza: #787878;
+    --hover: #4F8DF9;
+}
+
+
+.container1 {
+    background: #1B2653;
+    height: auto;
+    width: fit-content;
+}
+
+.container__imagem {
+    padding: 10px;
+    height: 5rem;
+}
+
+.coluna__2,
+.lista-menu,
+.lista-menu__link {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.container__2,
+.coluna__3,
+.lista-menu2,
+.lista-menu__item2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    flex-wrap: nowrap;
+}
+
+.lista-menu__link {
+    width: max-content;
+}
+
+.botao__menu {
+    background-color: transparent;
+    width: 150%;
+    height: 3rem;
+    color: var(--branco);
+    border-radius: 100px;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    border: var(--branco) solid 1px;
+    cursor: pointer;
+}
+
+.botao__menu:hover {
+    background: var(--hover);
+}
+
+.lista-menu__link:hover {
+    color: var(--cinza);
+}
+
+
+#numeroTelefone {
+    color: black;
+    /* Definindo a cor do número de telefone como preto */
+}
+
+
+/* Estilos padrão */
+
+/* Importações de fontes e variáveis */
+
+/* Estilos para os elementos */
+
+/* Consulta de mídia para telas menores */
+
+@media only screen and (max-width: 768px) {
+    /* Estilos específicos para telas menores */
+}

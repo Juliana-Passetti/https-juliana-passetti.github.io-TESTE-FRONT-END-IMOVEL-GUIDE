@@ -1,0 +1,121 @@
+@import url("/styles");
+@import url("/styles/header_style");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/*----GRID E FLEXBOX------*/
+
+.cabecalho {
+    background-color: var(--cor-de-fundo);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.container1,
+.container__imagem,
+.coluna__2 .lista-menu {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: repeat(3, 2fr 1fr 1fr 1fr);
+    align-items: center;
+}
+
+.coluna__1 .lista-menu {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 1em;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.coluna__2 .lista-menu {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.lista-menu__link,
+.lista-menu__link2 {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 2em;
+
+}
+
+.container__2 {
+    display: grid;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    padding: 1em;
+    width: max-content;
+    justify-content: space-around;
+}
+
+.container__3,
+.lista-menu2 {
+    width: 100;
+}
+
+/*----FIM GRID E FLEXBOX------*/
+
+
+/* Estilos para tela grande (desktop) */
+
+/* Importações e estilos comuns aqui */
+
+/* Media query para tablets */
+@media only screen and (max-width: 768px) {
+
+    .container1,
+    .container__imagem,
+    .coluna__2 .lista-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coluna__2 .lista-menu {
+        grid-column-start: 1;
+    }
+
+    /* Adicione mais ajustes conforme necessário para garantir uma aparência adequada em tablets */
+}
+
+/* Media query para dispositivos móveis */
+@media only screen and (max-width: 480px) {
+
+    .container1,
+    .container__imagem,
+    .coluna__2 .lista-menu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* Ajuste outros estilos conforme necessário para dispositivos móveis */
+    /*.cabecalho*/
+
+    /* Ajuste outros estilos conforme necessário para dispositivos móveis */
+}

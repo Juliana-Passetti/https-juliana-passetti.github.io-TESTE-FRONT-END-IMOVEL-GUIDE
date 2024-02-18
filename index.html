@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TESTE FRONT-END | IMOVEL GUIDE</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/header_gridflex.css">
+    <link rel="stylesheet" href="styles/header_style.css">
+    <link rel="stylesheet" href="/styles/main_gridflex.css">
+    <link rel="stylesheet" href="styles/main_style.css">
+    <link rel="stylesheet" href="/styles/footer_griflex.css">
+    <link rel="stylesheet" href="/styles/footer_style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script src="/java.js"></script>
+</head>
+
+<body>
+
+    <head class="cabecalho">
+
+        <section class="container1">
+
+            <img src="/img/Logo-imogui.png" alt="Logo da imóvel guide" class="container__imagem">
+
+            <ul class="coluna__2 lista-menu">
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Condomínios</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fórum</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Guia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Artigos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ferramentas</a>
+                </li>
+            </ul>
+
+            </div>
+
+            <Section class="container__2">
+                <div>
+
+                    <ul class="coluna__3 lista-menu2">
+
+                        <li class="lista-menu__item2">
+                            <a href="#" class="lista-menu__link">Cotar imóvel</a>
+                        </li>
+                        <li class="lista-menu__item2">
+                            <a href="#" class="lista-menu__link">Planos</a>
+                        </li>
+                        <li class="lista-menu__item2">
+                            <a href="#" class="lista-menu__link">Entrar</a>
+                        </li>
+
+                        <li><button class="botao__menu">CADASTRE-SE</button></li>
+
+                    </ul>
+                </div>
+            </Section>
+        </section>
+
+    </head>
+
+    <section>
+        <div class="container__3">
+            <div class="container__imagem_corretores">
+                <div class="container__descr">
+                    <p class="texto__corretor">Nome da Corretora <br>
+                    <p class="texto__corretor_min">3.000 Pontos</p> <br>
+                    <a class="texto__link" id="linkMostrar" href="#" onclick="mostrarAlerta()">Ver Telefone</a></a>
+                    <script>
+                        function mostrarAlerta() {
+                            alert("(99) 99999-9999");
+                        }
+                    </script>
+
+                </div>
+
+                <img class="imagem__corretora" src="/img/corretora.png" width="200px" height="250px">
+                <img class="imagem__corretora2" src="/img/corretora.png" width="150px" height="200px">
+
+                <br>
+
+                <div class="container__descr">
+                    <p class="texto__corretor">Nome do Corretor <br>
+                    <p class="texto__corretor_min">1.260 Pontos</p> <br>
+                    <a class="texto__link" id="linkMostrar" href="#" onclick="mostrarAlerta()">Ver Telefone</a></a>
+                    <script>
+                        function mostrarAlerta() {
+                            alert("(99) 99999-9999");
+                        }
+                    </script>
+                </div>
+                <img class="imagem__corretor" src="/img/corretor.png" width="200px" height="250px">
+                <img class="imagem__corretor2" src="/img/corretor.png" width="150px" height="200px">
+
+
+            </div>
+            <div class="container__mensagem">
+                <div class="container__mensagem__texto">Mande uma Mensagem:</div>
+                <div class="texto__cpf">
+                    <label for="cpf"></label>
+                    <input type="text" id="cpf" placeholder="Digite seu CPF">
+
+                    <label for="telefone"></label>
+                    <input type="text" id="telefone" placeholder="Digite seu telefone">
+
+                    <label for="mensagem"></label>
+                    <textarea id="mensagem" placeholder="Digite o assunto"></textarea>
+
+                    <button id="meuBotao">Enviar Mensagem</button>
+
+                </div>
+            </div>
+
+            <div class="container__regraDe3">
+                <h2 class="container__regra__h2">Regra de 3</h2>
+                <div class="input-group">
+                    <div class="left">
+                        <label for="valor1"></label>
+                        <input type="number" id="valor1" placeholder="60">
+                    </div>
+                    <hr class="separator"> <!-- Linha horizontal preta -->
+                    <div class="right">
+                        <label for="valor2"></label>
+                        <input type="number" id="valor2" placeholder="100">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="left">
+                        <label for="valor3"></label>
+                        <input type="number" id="valor3" placeholder="30">
+                    </div>
+                    <hr class="separator"> <!-- Linha horizontal preta -->
+                    <div class="right">
+                        <label for="resultado"></label>
+                        <input type="text" id="resultado" readonly>
+                    </div>
+                </div>
+                <div class="ajuste__botao">
+                    <button class="botao__calc" onclick="calcular()">Calcular</button>
+                </div>
+
+            </div>
+
+            <div class="container__modal">
+                <div class="container__modal__imagem">
+                    <img class="imagem__casa" src="/img/casa.png" alt="imagem casa" width="370px" height="370px">
+
+                </div>
+                <div class="container__botao__modal">
+                    <button id="btnAbrirModal" class="botao__mmodal">Abrir Imagem no Modal</button>
+
+                    <div id="modal" class="modal">
+                        <span class="fechar" onclick="fecharModal()">&times;</span>
+                        <img class="modal-imagem" id="imagemModal" src="/img/casa.png" alt="Imagem no Modal">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container__imagem__dl">
+                <div class="container__modal__imagem2 ">
+                    <img class="imagem__casa" src="/img/casa.png" alt="imagem casa" width="370px" height="370px">
+                    <div class="container__caixaTexto">
+                        <div class="caixa-texto">
+                            <h2>Imovel Guide</h2>
+                        </div>
+                        <div class="container__botao__dl">
+                            <button id="botaoDownload">Download</button>
+                        </div>
+                        <img src="/img/casa.png" alt="Casa Contemporânea" id="imagemParaDownload">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__zoom">
+                <img src="/img/casa.png" id="imagem__zoom" width="370px" height="350px">
+            </div>
+
+
+
+    </section>
+
+
+    <footer class="footer">
+        <section>
+            <div class="container__footer">
+                <ul class="coluna__lista-footer">
+
+                    <li class="lista-footer__item">
+                        <a href="#" class="lista-footer__link">Termos</a>
+                    </li>
+                    <li class="lista-footer__item">
+                        <a href="#" class="lista-footer__link">Contratos</a>
+                    </li>
+                    <li class="lista-footer__item">
+                        <a href="#" class="lista-footer__link">Sobre</a>
+                    </li>
+        </section>
+
+        <Section>
+            <div class="container__footer2">
+                <ul class="coluna__lista-footer2">
+
+                    <li class="lista-footer__copy">
+                        <p class="lista-footer__texto">©Copyright 2022. Todos os direitos
+                            reservados.</p>
+                    </li>
+                    <img src="/img/Logo-imogui.png" alt="Logo da imóvel guide" class="container__imagem__footer">
+            </div>
+        </section>
+        </div>
+
+
+    </footer>
+
+    <script src="/java.js"></script>
+
+</body>
+
+</html>

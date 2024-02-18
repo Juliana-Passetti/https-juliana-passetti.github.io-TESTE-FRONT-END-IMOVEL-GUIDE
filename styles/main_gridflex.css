@@ -1,0 +1,524 @@
+@import url("/styles");
+@import url("/styles/header_style");
+@import url("/styles/header_gridflex");
+@import url("/styles/main_style");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: whitesmoke;
+    --laranja: #FE6613;
+    --fonte-principal: "Roboto", sans-serif;
+    --azul: #1B2653;
+    --preto: #000000;
+    --cinza: #787878;
+    --hover: #4F8DF9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    height: 100vh;
+    font-size: 1em;
+    font-weight: 400;
+    overflow-x: hidden;
+
+}
+
+
+
+/*----GRID E FLEXBOX - CORRETORES------*/
+
+
+.container__3 {
+    display: grid;
+    grid-template-columns: repeat(3, 13%);
+    justify-content: start;
+    grid-template-rows: repeat(2, 3fr);
+    height: 100%;
+    width: 250%;
+    margin-left: 0;
+
+}
+
+.container__imagem_corretores {
+    background-color: transparent;
+    padding: 20px;
+    text-align: start;
+    border: gray solid 3px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    margin: 50px 0 0 50px;
+}
+
+.container__descr,
+.texto__corretor {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: justify;
+    margin-right: 7px;
+    margin-top: 20px;
+    float: right;
+}
+
+.texto__corretor_min,
+.texto__link {
+    float: right;
+    display: grid;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.imagem__corretora,
+.imagem__corretor {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 40%;
+    height: fit-content;
+    position: relative;
+}
+
+.imagem__corretora2 {
+    position: absolute;
+    filter: blur(1px);
+    top: 160px;
+    left: 68px;
+    z-index: -1;
+}
+
+.imagem__corretor2 {
+    position: absolute;
+    filter: blur(1px);
+    top: 350px;
+    left: 68px;
+    z-index: -1;
+
+}
+
+/*----FIM GRID E FLEXBOX 1------*/
+
+
+
+/*----GRID E FLEXBOX CAIXA DE MENSAGEM ------*/
+
+
+.container__mensagem {
+    display: grid;
+    background-color: transparent;
+    padding: 20px;
+    text-align: start;
+    border: gray solid 3px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    margin: 50px 0 0 50px;
+
+
+}
+
+.container__mensagem__texto {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: start;
+    justify-content: center;
+    height: 10px;
+}
+
+.texto__cpf {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 8px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#cpf {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    height: 50px;
+    border: var(--cinza) solid 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#telefone {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    height: 50px;
+    border: var(--cinza) solid 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#mensagem {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    height: 40%;
+    resize: none;
+    border: var(--cinza) solid 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+#meuBotao {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 50%;
+    height: 35px;
+    background: var(--laranja);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+}
+
+
+/*----FIM GRID E FLEXBOX 2------*/
+
+
+/*----GRID E FLEXBOX 3 - REGRA DE 3------*/
+
+.container__regraDe3 {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    background-color: transparent;
+    padding: 20px;
+    text-align: start;
+    border: gray solid 3px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    margin: 50px 0 0 50px;
+}
+
+
+
+.container {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 400px;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input[type="number"]::-webkit-inner-spin-button,
+.input-group input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.left,
+.right {
+    flex: 1;
+    width: 5px;
+    height: 5px;
+}
+
+.input-group label {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.input-group input {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+    border: --cinza solid 1px;
+    border-radius: 5px;
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.separator {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    border-top: 1px solid #000;
+    width: 10%;
+    display: grid;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.ajuste__botao {
+    display: flex;
+    justify-content: baseline;
+    align-items: end;
+    padding-bottom: 10px;
+}
+
+.botao__calc {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 50%;
+    height: 35px;
+    background: var(--laranja);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+}
+
+#resultado {
+    border: var(--laranja) solid 2px;
+}
+
+
+/*----FIM GRID E FLEXBOX 2------*/
+
+
+/*----GRID E FLEXBOX 4 - IMAGEM MODAL------*/
+
+.container__modal {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    border-radius: 5px;
+    margin: 50px 0 0 50px;
+}
+
+.container__modal__imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__botao__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-imagem {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnAbrirModal,
+.botao__modal {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 35px;
+    background: var(--laranja);
+    border: none;
+    border-radius: 5px;
+    color: var(--branco);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*----FIM - IMAGEM MODAL------*/
+
+
+/*----GRID E FLEXBOX 5 - CAIXA SOBRE POSTA------*/
+
+.container__imagem__dl {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    border-radius: 5px;
+    margin: 50px 0 0 50px;
+    position: relative;
+
+}
+
+.imagem__casa {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.caixa-texto {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    position: absolute;
+    display: flex;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fe6513aa;
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 5px;
+    /*----FIXA A CAIXA NA IMAGEM------*/
+    z-index: 0;
+    max-width: 80%;
+    text-align: center;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    pointer-events: none;
+}
+
+#imagemParaDownload {
+    display: none;
+}
+
+#botaoDownload {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 35px;
+    background: var(--laranja);
+    border: none;
+    border-radius: 5px;
+    color: var(--branco);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.container__botao__dl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----GRID E FLEXBOX 6 - IMAGEM ZOOM OUT------*/
+
+.container__zoom {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    font-weight: bold;
+    display: grid;
+    border-radius: 5px;
+    margin: 50px 0 0 50px;
+    overflow: hidden;
+    width: 400px;
+    height: 350px;
+}
+
+#imagem__zoom {
+    width: 100%;
+    /* Ajusta a largura da imagem para preencher o contêiner */
+    transition: transform 5s ease;
+    transform: scale(1);
+    /* Adiciona uma transição suave para a transformação */
+}
+
+.container__zoom:hover #imagem__zoom {
+    transform: scale(1.5);
+    /* Define um fator de escala para zoom in quando o mouse passa sobre a imagem */
+}
+
+
+
+/*------------RESPONSIVIDADE--------*/
+
+
+@media only screen and (max-width: 768px) {
+    .container__3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container__mensagem,
+    .container__regraDe3 {
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container__3 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .container__mensagem,
+    .container__regraDe3 {
+        width: 100%;
+
+        margin: 0 10px;
+
+    }
+}
